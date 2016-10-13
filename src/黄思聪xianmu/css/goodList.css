@@ -1,0 +1,174 @@
+#zy_main h2.title_z1 {
+    font-size: 22.5px;
+    font-weight: normal;
+    color: #191919;
+    font-family: "微软雅黑";
+    padding-top: 48px;
+    padding-bottom: 10px;
+    height: 27px;
+    line-height: 27px;
+}
+#zy_main h2.title_z1 span, h2.title_z1 em {
+    font-size: 20.5px;
+    color: #661166;
+}
+#zy_main h2.title_z1 em{
+	    margin: 0px 10px 0px 8px;
+}
+
+#zy_main .zy_goods_list .pcontent .goods-list li {
+    width: 243px;
+    background: #fff;
+    border: solid 1px #fff;
+    float: left;
+    margin: 0px 7px 10px 0px;
+}
+
+
+
+#zy_main .zy_goods_list .pcontent .goods-list li .pic-box {
+    display: block;
+    min-height: 255px;
+    position: relative;
+}
+#zy_main .zy_goods_list .pcontent .goods-list li .pic-box #gq {
+    position: absolute;
+    width: 38px;
+    height: 25px;
+    left: 15px;
+    top: 15px;
+    z-index: 10;
+}
+#zy_main .zy_goods_list .pcontent .goods-list li .info-box {
+    display: block;
+    padding: 0px 15px;
+}
+#zy_main .zy_goods_list .pcontent .goods-list li .info-box h6 {
+    font-weight: normal;
+    max-height: 38px;
+    overflow: hidden;
+}
+#zy_main .zy_goods_list .pcontent .goods-list li .info-box h6 a {
+    color: #373737;
+    font-size: 13px;
+    line-height: 18px;
+}
+#zy_main .zy_goods_list .pcontent .goods-list li .info-box h6 a {
+    color: #373737;
+    font-size: 13px;
+    line-height: 18px;
+}
+#zy_main .zy_goods_list .pcontent .goods-list li dl dd {
+    display: block;
+    float: left;
+    line-height: 29px;
+}
+#zy_main .zy_goods_list .pcontent .goods-list li dl dd.market-price {
+    font-size: 12px;
+    color: #a9a9a9;
+    margin-left: 5px;
+    line-height: 32px;
+}
+#zy_main .zy_goods_list .pcontent .goods-list li dl dd a.btnBuy {
+    font-size: 12px;
+    background: #d22147;
+    width: 63px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+
+#zy_main h2.title_z1 a.more {
+    font-size: 15px;
+    color: #000;
+    float: right;
+    padding-right: 10px;
+}
+/*宝宝*/
+#zy_main .zy_tab li.current {
+    background-color: #661166;
+    color: #fff;
+    border-color: #661166;
+}
+
+
+#zy_main .zy_tab {
+    border-top: 2px solid #090909;
+    min-height: 63px;
+    width: 1001px;
+}
+#zy_main .zy_tab li {
+    display: block;
+    float: left;
+    height: 45px;
+    position: relative;
+    width: 199px;
+    line-height: 45px;
+    background: #FFFFFF;
+    border: solid 1px #8b8b8b;
+    margin-right: -1px;
+    border-top: none;
+    text-align: center;
+    font-size: 20px;
+    color: #191919;
+    cursor: pointer;
+}
+.note {
+    background: #E8F2FF;
+    border: 1px solid #D4E7FF;
+    padding:1em;
+}
+.title-t2 {
+    text-align: center;
+    width: 390px;
+    margin: 0 auto;
+    height: 36px;
+    line-height: 36px;
+    padding-top: 40px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 400;
+    border-bottom: solid 1px #cccccc;
+}
+
+.title-t2 small {
+    color: #661166;
+    padding-left: 13px;
+}
+
+ #header{
+	width:100%;
+	height:30px;
+	background:#f7f7f7;
+	border-bottom:1px solid #eee;
+	line-height:30px;
+	color:#999;
+	}
+#header .fl .page_index {
+    font-size: 12px;
+    color: #999;
+    padding-left: 18px;
+    background:url(../img/sy.jpg) no-repeat left;
+    font-weight: 100;
+   }
+#header .nav li{float:left;margin-right:15px;position:relative;}
+
+#header .nav .down{position:absolute;top:30px;left:0;padding-left:25px;display:none;z-index:9999;}/*没这个属性的话下拉菜单*/
+#header .nav .down a{display:block;color:#999;line-height:20px;margin-left:-23px;background:#fff;}
+#header .nav li a:hover{color:#661166;}
+#header .nav .lis1 a:hover{color:#999;}
+#header .nav li a{ font-size: 12px;color: #999;}
+#header .nav li i{background:url(../img/sj.jpg)no-repeat;display:inline-block;width:9px;height:5px;
+                  vertical-align:middle;}
+#header .nav li:hover i{background:url(../img/fsj.jpg)no-repeat;display:inline-block;width:9px;height:5px;
+                  vertical-align:middle;}
+#header .nav li span{padding:0 5px;}
+#header .nav li .gwc{background:url(../img/gwc.jpg)no-repeat;display:inline-block;width:15px;height:14px;
+                     vertical-align:middle;padding-left:3px;}
+#header .nav li:hover .gwc{background:url(../img/gwc.jpg)no-repeat;display:inline-block;width:15px;height:14px;
+                     vertical-align:middle;padding-left:3px;}
+
+
+

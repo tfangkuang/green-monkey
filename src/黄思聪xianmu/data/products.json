@@ -1,0 +1,57 @@
+{
+	"g0": {
+		"id": 0,
+		"name": "德国Weleda维蕾德金盏花婴儿按摩油 200ml",
+		"img": "../img/id1.jpg",
+		"price": 89,
+		"d_price":99,
+		"product_price":154.8,
+		"product_sm":"德国Weleda维蕾德金盏花婴儿按摩油 200ml",
+		"product_sf":10.95,
+		"bigimg":"../img/sid.jpg"
+	},
+	"g1": {
+		"id": 1,
+		"name": "日本 Kao花王妙儿舒NB90纸尿裤(5kg)",
+		"img": "../img/id2.jpg",
+		"price": 89,
+		"d_price":99,
+		"product_price":155.8,
+		"product_sm":"日本 Kao花王妙儿舒NB90纸尿裤(5kg)",
+		"product_sf":10.75,
+		"bigimg":"../img/sid2.jpg"
+	},
+	"g2": {
+		"id": 2,
+		"name": "美国Babyganics 奶瓶清洗消毒液- 柑橘味 473ml",
+		"img":"../img/id3.jpg",
+		"price": 45,
+		"d_price":49.5,
+		"product_price":156.8,
+		"product_sm":"美国Babyganics 奶瓶清洗消毒液- 柑橘味 473ml",
+		"product_sf":100,
+		"bigimg":"../img/sid4.jpg"
+
+	},
+	"g3": {
+		"id": 3,
+		"name": "日本 shiseido资生堂 Fino高效渗透护发膜柔顺修复230g",
+		"img": "../img/id4.jpg",
+		"price": 49,
+		"price": 56,
+		"d_price": 100,
+		"product_price":157.8,
+		"product_sm":"日本 shiseido资生堂 Fino高效渗透护发膜柔顺修复230g",
+		"product_sf":0.00,
+		"bigimg":"../img/sid3.jpg"
+	},
+	"g4": {
+		"id": 4,
+		"name": "臻美萱 无袖撞色连衣裙 160308059 图片色",
+		"img": "../img/id4.jpg",
+		"href": "detailProduct0.html",
+		"price": 49,
+		"d_price": 100
+	}
+	
+}

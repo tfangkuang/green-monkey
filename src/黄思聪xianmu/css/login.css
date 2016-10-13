@@ -1,0 +1,156 @@
+
+.login-topbar, .register-topbar {
+    box-shadow: 0px 2px 1px 1px #ddd;
+    height: 66px;
+    position: relative;
+}
+.login-topbar .w1200, .register-topbar .w1200 {
+    height: 66px;
+    overflow: hidden;
+}
+.logo-fl {
+    margin-top: 17px;
+    float: left;
+}
+.text-fl {
+    height: 66px;
+    line-height: 66px;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 400;
+    margin-left: 28px;
+    float: left;
+}
+.text-fr1 {
+    float: right;
+    height: 66px;
+    line-height: 66px;
+    color: #666666;
+    font-size: 12px;
+}
+.text-fr2 {
+    float: right;
+    height: 66px;
+    line-height: 66px;
+    color: #666666;
+    margin-right: 50px;
+    font-size: 12px;
+}
+.text-fr2 a{
+   color: #666;
+}
+.text-fr1 a{
+   color: #666;
+}
+
+/*中间版心部分*/
+.login-main{
+	    width: 100%;
+	    background-color: rgb(245,245,245);
+	    margin-top: 3px;
+}
+.login-ad {
+    float: left;
+    width: 716px;
+    height: 420px;
+    margin-top: 33px;
+}
+.login-box{
+	padding: 0;
+  /*  margin-top: 40px;*/
+    width: 457px;
+   border:1px solid #DDDDDD;
+    height:418px;
+    position:relative;
+}
+.login-user{
+	     position:absolute;
+	     color: #999;
+	     left:35px;
+	     top:35px;
+
+}
+.login-text{
+	position:absolute;
+	left:35px;
+	top:70px;
+	width:320px;
+	height:36px;
+	border:1px solid #999;
+	
+}
+.login-text input {
+    position: absolute;
+    left: 35px;
+    top: 4px;
+    width: 255px;
+    height: 28px;
+    background-color: rgb(245,245,245);
+    border-left: 1px solid #DDDDDD;
+}
+.login-text .login-img1{
+	display:inline-block;width:36px;height:36px;background:url(../img/loginname-pic.png)no-repeat;
+}
+
+.login-psw1{
+	 position:absolute;
+	     color: #999;
+	     left:35px;
+	     top:135px;
+}
+.login-psw2{
+	position:absolute;
+	left:35px;
+	top:170px;
+	width:320px;
+	height:36px;
+	border:1px solid #999;
+}
+.login-psw2 input {
+    position: absolute;
+    left: 35px;
+    top: 4px;
+    width: 255px;
+    height: 28px;
+    background-color: rgb(245,245,245);
+    border-left: 1px solid #DDDDDD;
+}
+.login-psw2 .login-img2{
+	display:inline-block;width:36px;height:36px;background:url(../img/loginpass-pic.png) no-repeat;
+}
+.login-check{
+	position:absolute;
+	left:35px;
+	top:235px;
+	color: #999;
+}
+.zdlogin{
+	width:320px;height:36px;background:#661166;text-align:center;line-height:36px;
+	position:absolute;top:290px;left:70px;border-radius:2px;
+}
+.zdlogin a{
+	color:#fff;
+}
+.none-1{
+	position:absolute;
+	left:35px;
+	top:115px;
+	color:red;
+	display: none;
+}
+.none-2{
+	position:absolute;
+	left:35px;
+	top:215px;;
+	color:red;
+	display: none;
+}
+.zc{
+	position:absolute;
+	left:35px;
+	top:380px;;
+}
+.zc a{
+	color:#661166;
+}
+

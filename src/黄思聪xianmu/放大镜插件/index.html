@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>jquery仿京东商城产品详细效果,京东图片放大效果</title>
+
+		<link href="css/basefd.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jqzoom.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+
+	</head>  
+
+	<body>  
+
+		<div class="right-extra" style="margin:100px;">
+			<!--产品参数开始-->
+			<div>
+				<div id="preview" class="spec-preview">
+					<span class="jqzoom">
+						<img jqimg="images/b1.jpg" src="images/s1.jpg" />
+					</span> 
+				</div>
+				<!--缩图开始-->
+				<div class="spec-scroll"> <a class="prev">&lt;</a> <a class="next">&gt;</a>
+					<div class="items">
+						<ul>
+							<li><img alt="佳能" bimg="images/b1.jpg" src="images/s1.jpg" onmousemove="preview(this);"></li>
+							<li><img alt="佳能" bimg="images/b2.jpg" src="images/s2.jpg" onmousemove="preview(this);"></li>
+							<li><img alt="佳能" bimg="images/b3.jpg" src="images/s3.jpg" onmousemove="preview(this);"></li>
+							<li><img alt="佳能" bimg="images/b1.jpg" src="images/s1.jpg" onmousemove="preview(this);"></li>
+							<li><img alt="佳能" bimg="images/b3.jpg" src="images/s3.jpg" onmousemove="preview(this);"></li>
+							<li><img alt="佳能" bimg="images/b1.jpg" src="images/s1.jpg" onmousemove="preview(this);"></li>
+							<li><img alt="佳能" bimg="images/b2.jpg" src="images/s2.jpg" onmousemove="preview(this);"></li>
+							<li><img alt="佳能" bimg="images/b1.jpg" src="images/s1.jpg" onmousemove="preview(this);"></li>
+							<li><img alt="佳能" bimg="images/b2.jpg" src="images/s2.jpg" onmousemove="preview(this);"></li>
+							<li><img alt="佳能" bimg="images/b2.jpg" src="images/s2.jpg" onmousemove="preview(this);"></li>
+							<li><img alt="佳能" bimg="images/b1.jpg" src="images/s1.jpg" onmousemove="preview(this);"></li>
+							<li><img alt="佳能" bimg="images/b2.jpg" src="images/s2.jpg" onmousemove="preview(this);"></li>
+						</ul>
+					</div>
+				</div>
+				<!--缩图结束-->
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<!--<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/index.css">-->
+	<link rel="stylesheet" href="../css/common/base.css"/>	
+	<link rel="stylesheet" href="../css/shopCar.css"  />
+</head>
+<body>
+	
+		<div class="cart-page">
+			<div class="wid-1200 main">
+				<div class="MTB">
+					<div class="cart-notice-wrap">
+					  <div class="cart-notice"></div>
+					  <div>
+					  	<table class="pro_list_cart_xu ddqr_info"width="100%"border="0"cellspacing="0"cellpadding="0"style=""background:#fff;id="goodschannel1_1_1_129">
+					  		<thead style="display:table-header-group">
+					  			<tr>
+					  				<th class="c_969696" width="430">商品信息</th>
+					  				<th class="c_969696" width="120">税费</th>
+					  				<th class="c_969696" width="120">单价</th>
+					  				<th class="c_969696" width="120">数量</th>
+					  				<th class="c_969696" width="120">重量</th>
+					  				<th class="c_969696" width="170">商品小计</th>
+					  				<th class="c_969696" width="120">操作</th>
+					  			</tr>
+					  		</thead>
+					  	    <tbody>
+					  		  <tr style="background:#fcfcfc">
+					  		  	<td colspan="8">
+					  		  		<h3 class="model-source">
+										阳光海淘	-
+										杭州海关-
+										备货模式<!--  - 货源:CT010 -->
+									</h3>
+					  		  	</td>
+					  		  </tr>
+					  		  
+					  		  <tr id="del_shop">
+					  		  	<td width="430">
+					  		  	<div class="goodpic spmc_l">
+									<a href="#" target="_blank">
+									 <img class="img_td" style="width:78px;height:78px;" src="../img/td1.jpg" width="70/">
+									</a>
+								</div>
+								<div class="spmc_r">
+									<a target="_blank" class="item_title" href="/product-864838.html">
+										日本 shiseido资生堂 Fino高效渗透护发膜柔顺修复230g
+									</a>
+									<span class="item-spec">包装规格:230g</span>
+								</div>
+					  		  	</td>
+					  		  	
+					  		  	<td class="goods_price textcenter" width="120" align="center">
+									<p>￥5.83</p>															
+								</td>
+								<td class="goods_price textcenter" align="center" valign="middle" width="120">
+									
+									<p class="del_price"> ￥56.00</p>
+								    <p class="now_price">￥49.00</p>															
+							   </td>
+							   <td class="textcenter">
+								  <div class="Numinput ma numadjust-arr">
+								    <span class="numadjust decrease">-</span>
+								    <input class = "shop_val"type="text" value="1"/>
+									<span class="numadjust increase">+</span>
+									</div>
+								 																																			<!--  -->
+								</td>
+								<td class="textcenter" width="120" style="font-size:12px;">
+									300g
+								</td>
+								
+								<td class="goods_price textcenter buy_price xj_p" width="170">
+									￥89.00	
+								</td>
+								<td width="120">
+									<ul class="cart-coll-ul">
+										<li class="cart-del">
+											<a class="red delBtn"><span class="delItem">&nbsp;&nbsp;&nbsp;删除&nbsp;&nbsp;&nbsp;</span></a>
+										</li>
+									</ul>
+								</td>
+					  		  </tr>
+					  		  
+					  		  <tr class="tr_line">
+								<td colspan="7">
+								  <div class="line"></div>
+							    </td>
+							</tr>
+							
+							<tr class="last_tr" style="border-top:solid 1px rgb(213,213,213);background:#fff;">
+							  <td colspan="8">
+								<div class="fl" style="margin-left:32px;">
+							
+								</div>
+								 <div class="fr cart-hj-wrap"style="display: inline;">
+									<button type="submit" class="btn cart_settlement fr"><span>去结算</span></button>
+									<p class="fr cart-hj">合计（不含运费，不含税）：<em>￥</em><span id="total_goodschannel_1_1_1_129">138</span></p>
+								</div>
+																													
+							   </td>
+							</tr>
+					     	</tbody>
+					  	</table>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+      <script src="../js/shopCar.js"></script>
+	 <script src="../cookie-1/js/jquery-1.12.3.js"></script>
+	 <script src="../cookie-1/js/jquery.cookie.js"></script>
+	  <script>
+
+          
+
+	  	var append = JSON.parse($.cookie('carts'));
+	  	
+	  	var count = Object.keys(append).length;  //获取对象的长度
+//	  	console.log(count)
+	  	var go_html = $("#del_shop").html();
+	  	for(var i=0; i<count-1; i++){
+	  	   $("#del_shop").after("<tr>"+go_html+"</tr>");   //当购物车增加的时候，自动生成购物车的tr列表
+	  	}
+	  	var total = 0;
+	  	var iter = 0;
+			for (i in append) {
+            
+//          console.log($(".del_price").text())
+            $(".del_price").eq(iter).html("￥"+append[i].del)
+            $(".now_price").eq(iter).html("￥"+append[i].price)
+            $(".shop_val").eq(iter).val(parseInt(append[i].counT));
+            $(".shop_val").eq(iter).attr("data-id", append[i].id);
+            $(".buy_price").eq(iter).html("￥"+parseInt(append[i].counT*append[i].price))
+            total += append[i].counT*append[i].price
+            $(".img_td").eq(iter).attr("src",append[i].id)
+            $(".item_title").eq(iter).text(append[i].titie);
+            iter++;
+//          console.log($(".item_title").text())
+
+                     
+			} 
+	        $("#total_goodschannel_1_1_1_129").html(parseInt(total));
+			var goods = JSON.parse($.cookie('carts'));
+//			当点击加商品的时候，必须找到当前商品的id，然后更改cookie值
+		    $(".increase").click(function() {
+		    	var iter = 0;
+		    	var total = 0;
+		    	var current_goods_id = $(this).prev().attr("data-id");
+		    	for(i in goods){
+		    		if(goods[i].id == current_goods_id){
+		    			goods[i].counT++;
+		    			$(this).prev().val(goods[i].counT);
+		    		    $(".buy_price").eq(iter).html("￥"+parseInt(append[i].price*goods[i].counT));
+		    		}
+		    		total += goods[i].counT*goods[i].price;
+		    		iter++;
+		    	}
+		    	$("#total_goodschannel_1_1_1_129").html(parseInt(total));
+		    	$.cookie("carts" ,JSON.stringify(goods),{expires : 7 ,path : "/"})
+		    });
+			
+			    
+			    
+			$(".decrease").click(function() {
+				var iter = 0 ;
+				var total = 0;
+				var current_goods_id = $(this).next().attr("data-id");
+		    	for(i in goods){
+		    		if(goods[i].id == current_goods_id){
+		    			if(goods[i].counT<=1){
+	                     $(".shop_val").eq(iter).val(1);
+                        }else{
+                          goods[i].counT--;	
+                        }
+		    			
+		    			$(this).next().val(goods[i].counT);
+		    			$(".buy_price").eq(iter).html("￥"+parseInt(append[i].price*goods[i].counT));
+		    		}
+		    		total += goods[i].counT*goods[i].price;
+		    		iter++;
+		    	}
+		    	$("#total_goodschannel_1_1_1_129").html(parseInt(total));
+		    	$.cookie("carts" ,JSON.stringify(goods),{expires : 7 ,path : "/"})
+			})
+			
+		   
+//			$(".delItem").click(function() {
+////		       console.log($(this).parent().parent().parent().parent().parent().hide())
+//             
+//			})
+////          
+//			
+		 
+        
+			
+			
+//			  var $li = $("ul li:eq(1)").remove(); 
+//		  
+	  </script>
+	 <!--$(".increase").click(function() {
+		    	var iter = 0;
+		    	var total = 0;
+		    	var current_goods_id = $(this).prev().attr("data-id");
+		    	for(i in goods){
+		    		if(goods[i].id == current_goods_id){
+		    			goods[i].counT++;
+		    			$(this).prev().val(goods[i].counT);
+		    		    $(".buy_price").eq(iter).html("￥"+parseInt(append[i].price*goods[i].counT));
+		    		}
+		    		total += goods[i].counT*goods[i].price;
+		    		iter++;
+		    	}
+		    	$("#total_goodschannel_1_1_1_129").html(parseInt(total));
+		    	$.cookie("carts" ,JSON.stringify(goods),{expires : 7 ,path : "/"})
+		    });-->
+			
+</body>
+</html>
